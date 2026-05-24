@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHAHNOOR RAHMAN | Portfolio</title>
+
+<style>
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #050816, #0a0f1c);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAME GLOW */
+.hero h1 {
+    font-size: 60px;
+    color: #00aaff;
+    text-shadow: 0 0 10px #00aaff, 0 0 30px #00aaff;
+}
+
+/* SKILL TEXT */
+#typing {
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 25px;
+}
+.btn {
+    background: #00aaff;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.btn:hover {
+    box-shadow: 0 0 15px #00aaff;
+}
+
+/* SECTION */
+section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+/* CARDS */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #00aaff;
+}
+
+/* FADE ANIMATION */
+body {
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Joy Rahman</h1>
+    <p id="typing"></p>
+
+    <div class="buttons">
+        <a href="projects.html" class="btn">View My Work</a>
+        <a href="contact.html" class="btn">Hire Me</a>
+        <a href="achievements.html" class="btn">Achievements</a>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section>
+    <h2 style="color:#00aaff;">My Services</h2>
+    <div class="card-container">
+        <div class="card">📊 Data Entry</div>
+        <div class="card">🔍 Web Research</div>
+        <div class="card">📧 Lead Generation</div>
+        <div class="card">📈 Excel Work</div>
+    </div>
+</section>
+
+<!-- PROJECT PREVIEW -->
+<section>
+    <h2 style="color:#00aaff;">Projects</h2>
+
+    <h3>Completed</h3>
+    <div class="card-container">
+        <div class="card">Lead Generation Project</div>
+    </div>
+
+    <h3>Ongoing</h3>
+    <div class="card-container">
+        <div class="card">E-commerce Data Entry</div>
+    </div>
+
+    <h3>Upcoming</h3>
+    <div class="card-container">
+        <div class="card">Market Research</div>
+    </div>
+</section>
+
+<!-- TYPING EFFECT -->
+<script>
+const text = "Data Entry Expert | Lead Generator | Web Researcher";
+let i = 0;
+
+function typing() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 50);
+    }
+}
+typing();
+</script>
+
+</body>
+</html>
