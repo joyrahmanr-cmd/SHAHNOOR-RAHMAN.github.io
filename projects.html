@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #050816, #0a0f1c);
+    color: white;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+/* TITLE */
+h1 {
+    color: #00aaff;
+    margin-top: 20px;
+}
+
+/* SECTION */
+section {
+    padding: 30px;
+}
+
+/* CARDS */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #00aaff;
+}
+
+/* IMAGE */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* BUTTON */
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+a:hover {
+    box-shadow: 0 0 10px #00aaff;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>My Projects</h1>
+
+<!-- COMPLETED -->
+<section>
+    <h2>Completed Projects</h2>
+    <div class="card-container">
+        <div class="card">
+            <p>Lead Generation Project</p>
+            <img src="project1.jpg">
+        </div>
+
+        <div class="card">
+            <p>Excel Data Cleaning</p>
+            <img src="project2.jpg">
+        </div>
+    </div>
+</section>
+
+<!-- ONGOING -->
+<section>
+    <h2>Ongoing Projects</h2>
+    <div class="card-container">
+        <div class="card">
+            <p>E-commerce Data Entry</p>
+        </div>
+    </div>
+</section>
+
+<!-- UPCOMING -->
+<section>
+    <h2>Upcoming Projects</h2>
+    <div class="card-container">
+        <div class="card">
+            <p>Market Research Project</p>
+        </div>
+    </div>
+</section>
+
+<!-- BACK BUTTON -->
+<a href="index.html">⬅ Back to Home</a>
+
+</body>
+</html>
